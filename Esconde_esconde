@@ -1,0 +1,21 @@
+# importar biblioteca
+import time
+
+#apresentar e receber variavel para sair ou entrar no programa
+x = input('''venha brincar comigo de esconde-esconde,
+aperte "enter" que eu vou contar enquanto vc se esconde, se não, digite  "sair" ''')
+
+#condição para sair do programa
+if x.lower() == 'sair':
+    print(f'Ah! que pena')
+
+# Loop for de 1 a 5 imprimir a contagem e esperar um segundo
+elif x == '':
+    for i in range(1, 6):
+        print(f'mississippy {i}')
+        time.sleep(1)
+
+    print('Pronto ou não, lá vou eu')
+# caso o usuário entre com outro caractere que não seja o enter ou 'sair'
+else:
+    print('Comando não reconhecido. Tente novamente.')
